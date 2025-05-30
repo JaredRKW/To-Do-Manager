@@ -15,5 +15,16 @@ struct task_Data
 
 extern std::vector<task_Data> task_Vector;
 
+inline std::ostream& operator<<(std::ostream& os, const task_Data& task)
+{
+	os << task.task_Who << "|"
+		<< task.task_What << "|"
+		<< task.task_Where << "|"
+		<< task.task_When << "|"
+		<< task.task_Due;
+
+	return os;
+}
+
 void testPopulateDatabase();	// From test_data.cpp
 								// Adds test cases to memory but does not write to file until called!

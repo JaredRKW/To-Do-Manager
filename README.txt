@@ -1,8 +1,8 @@
-# To-Do Manager
+To-Do Manager
 
 Simple To-Do Manager ran from the command-line. Windows only support at the moment.
 
-# While there should be a '.exe' being provided with the repo, it is recommended to build yourself. 
+While there should be a '.exe' being provided with the repo, it is recommended to build yourself. 
 Instructions to build using MSVC Compiler:
 	1. Clone the git repo
 	2. In a console, cd to the project's root folder: 
