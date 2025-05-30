@@ -1,0 +1,47 @@
+// To-Do Manager. Input tasks you need to complete, including "who, what, where, when," and write it to a text file.
+
+
+// Imports
+#include <iostream>
+
+
+struct task_Table
+
+
+main()
+{	
+	
+
+	return 0;
+}
+
+
+
+displayMenu()
+{
+	Display menu showing options >> Add(1), Remove(2)
+
+	if 1
+		add_Task()
+	elif 2
+		remove_Task()
+	else
+		"Select a valid option!"
+}
+
+
+addTask()
+{
+	Display menu prompting user to name task
+
+	Add task (as string variable) to table
+}
+
+
+removeTask()
+{	
+	Display menu showing available tasks (from table) to remove
+
+	Take integer input and remove task from table
+
+}
