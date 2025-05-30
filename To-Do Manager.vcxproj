@@ -123,7 +123,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="filehandler.cpp" />
+    <ClCompile Include="file_handler.cpp" />
     <ClCompile Include="test_data.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
