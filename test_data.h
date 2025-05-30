@@ -3,6 +3,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <sstream>
 
 struct task_Data
 {
@@ -17,7 +18,7 @@ extern std::vector<task_Data> task_Vector;
 
 inline std::ostream& operator<<(std::ostream& os, const task_Data& task)
 {
-	os << task.task_Who << "|"
+	os << task.task_Who << "|"	// Uses '<<' operator and separates each attribute in an 'task_Data' item by a 'pipe'
 		<< task.task_What << "|"
 		<< task.task_Where << "|"
 		<< task.task_When << "|"
@@ -26,5 +27,21 @@ inline std::ostream& operator<<(std::ostream& os, const task_Data& task)
 	return os;
 }
 
+inline std::istream& operator>>(std::istream& is, task_Data& task)
+{
+	std::string line;
+	if (std::getline(is, line))
+	{
+		std::stringstream ss(line);			// uses 'line' as a stringstream.
+		std::string field;
+
+		if (std::getline(ss, field, '|')) task.task_Who = field;		// Each line takes whatever is after each 'pipe' and appends it to the task.attribue
+		if (std::getline(ss, field, '|')) task.task_What = field;
+		if (std::getline(ss, field, '|')) task.task_Where = field;
+		if (std::getline(ss, field, '|')) task.task_When = field;
+		if (std::getline(ss, field, '|')) task.task_Due = field;
+	}
+	return is;
+}
+
 void testPopulateDatabase();	// From test_data.cpp
-								// Adds test cases to memory but does not write to file until called!

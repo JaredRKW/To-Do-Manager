@@ -21,6 +21,9 @@
     <ClCompile Include="test_data.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="filehandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="test_data.h">
