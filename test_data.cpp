@@ -56,5 +56,5 @@ void testPopulateDatabase()
 	task_Vector.push_back(test_data_04);
 	task_Vector.push_back(test_data_05);
 
-	std::cout << "\ndebug testPopulateDatabase succeeded. Added " << task_Vector.size() << " test cases to the database!\n";
+	//std::cout << "\ndebug testPopulateDatabase succeeded. Added " << task_Vector.size() << " test cases to the database!\n";
 }
